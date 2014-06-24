@@ -1,0 +1,85 @@
+/* Eric Meyer's CSS Reset v2.0 */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;text-decoration:none;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Futuristic Hover Menu v1.2 by Amruth Pillai (http://www.amruth.me/) */
+
+html, body {
+	background: #FFF;
+	margin: 0 auto;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+@font-face {
+    font-family: 'GudeaBold';
+    src: url('Gudea-Bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+nav {
+	margin: 100px 0 0 100px;
+}
+
+/* Actual CSS Starts Here */
+
+.hover-menu {
+	width: 60px;
+	background: #FFF;
+}
+
+	.hover-menu ul a {
+		color: #DDD;
+	}
+
+		.hover-menu ul li {
+			width: 80px;
+			height: 80px;
+			border: solid 1px #EEE;
+			margin-bottom: -1px;
+			transition: all .4s ease;
+		}
+		
+			.hover-menu ul a:hover li {
+				width: 350px;
+				transition: all .4s ease;
+			}
+		
+			.hover-menu ul li span {
+				float: left;
+				width: 40px;
+				height: 40px;
+				margin: 20px 0 0 20px;
+				background: url(icon-sprite.png);
+				opacity: 0.5;
+				transition: all .4s ease;
+			}
+			
+				.hover-menu ul a:hover li span {
+					opacity: 1;
+					transition: all .4s ease;
+				}
+			
+				.hover-menu ul li .menulist-home { background-position: 0px 0px; }
+				.hover-menu ul li .menulist-profile { background-position: 0 -40px; }
+				.hover-menu ul li .menulist-messages { background-position: 0 -80px; }
+				.hover-menu ul li .menulist-portfolio { background-position: 0px -120px; }
+				.hover-menu ul li .menulist-contact { background-position: 0px -160px; }
+			
+			.hover-menu ul li h1 {
+				font-family: GudeaBold;
+				position: absolute;
+				margin-top: 23px;
+				float: right;
+				font-size: 40px;
+				font-weight: bold;
+				text-transform: uppercase;
+				opacity: 0;
+				transition: all .4s ease;
+			}
+			
+				.hover-menu ul a:hover li h1 {
+					margin-left: 100px;
+					opacity: 1;
+					transition: all .4s ease;
+				}
